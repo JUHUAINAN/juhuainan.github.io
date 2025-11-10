@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏官网</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="./images/biao ti logo.png" alt="游戏名称">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home"><img src="./images/nav_pic1_shouye.png" alt="首页" class="nav-icon">首页</a></li>
+                <li class="nav-dropdown">
+                    <a href="#world"><img src="./images/nav_pic3_yanyunshijie.png" alt="燕云世界" class="nav-icon">燕云世界</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#big-world"><img src="./images/nav_pic12_dashijie.png" alt="大世界">大世界</a></li>
+                        <li><a href="#weapon"><img src="./images/nav_pic4_wuqi.png" alt="武器">武器</a></li>
+                        <li><a href="#boss"><img src="./images/nav_pic5_shouling.png" alt="首领">首领</a></li>
+                        <li><a href="#map-tool"><img src="./images/nav_pic16_ditugongju.png" alt="地图工具">地图工具</a></li>
+                    </ul>
+                </li>
+                <li><a href="#news"><img src="./images/nav_pic2_xinwen.png" alt="新闻" class="nav-icon">新闻</a></li>
+                <li><a href="#gallery"><img src="./images/nav_pic10_wanxiangji.png" alt="万相集" class="nav-icon">万相集</a></li>
+                <li><a href="#tournament"><img src="./images/nav_pic17_saishizhongxin.png" alt="赛事中心" class="nav-icon">赛事中心</a></li>
+                <li class="nav-dropdown">
+                    <a href="#player"><img src="./images/nav_pic13_wanjiazhongxin.png" alt="玩家中心" class="nav-icon">玩家中心</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#faq"><img src="./images/nav_pic14_changjianwenti.png" alt="常见问题"> 常见问题</a></li>
+                    </ul>
+                </li>
+                <li><a href="#recharge"><img src="./images/nav_pic11_chongzhi.png" alt="充值中心" class="nav-icon">充值中心</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页横幅 -->
+    <section id="home" class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="./images/videos/hero.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <img src="./images/videos/logo2_97a4294.png" alt="游戏Logo" class="hero-logo">
+            <div class="hero-download-buttons">
+                <a href="#" class="hero-btn hero-btn-pc">
+                    <img src="./images/videos/btn-pc-download_fed45bc.png" alt="PC下载">
+                </a>
+                <div class="hero-buttons-right">
+                    <a href="#" class="hero-btn hero-btn-fever">
+                        <img src="./images/videos/btn-fire-download2_83e1859.png" alt="发烧平台下载">
+                    </a>
+                    <a href="#" class="hero-btn hero-btn-mobile">
+                        <img src="./images/videos/download-m_74630fd.png" alt="移动版下载">
+                    </a>
+                    <a href="#" class="hero-btn hero-btn-cloud">
+                        <img src="./images/videos/btn-cloud_e1c8e93.png" alt="云·燕云">
+                    </a>
+                    <a href="#" class="hero-btn hero-btn-community">
+                        <img src="./images/videos/btn-dsq_9b1a6b4.png" alt="前往大神圈子">
+                    </a>
+                </div>
+            </div>
+            <div class="hero-social-icons">
+                <a href="#" class="hero-social-icon" data-qr="./images/videos/qr-bili_de33d93.png">
+                    <img src="./images/videos/icon-bili_4d4d9cd.png" alt="B站">
+                </a>
+                <a href="#" class="hero-social-icon" data-qr="./images/videos/qr-qq_4b0c4d3.jpg">
+                    <img src="./images/videos/icon-qq_5e8d9f4.png" alt="QQ">
+                </a>
+                <a href="#" class="hero-social-icon" data-qr="./images/videos/qr-qywx_d29c951.png">
+                    <img src="./images/videos/icon-qq2_bd38e77.png" alt="企业微信">
+                </a>
+                <a href="#" class="hero-social-icon" data-qr="./images/videos/qr-wb_f6a6fd3.png">
+                    <img src="./images/videos/icon-wb_4b4a897.png" alt="微博">
+                </a>
+                <a href="#" class="hero-social-icon" data-qr="./images/videos/qr-wx_32ca879.png">
+                    <img src="./images/videos/icon-wx_5def52c.png" alt="微信">
+                </a>
+                <a href="#" class="hero-social-icon" data-qr="./images/videos/qr-xcx_0f2c985.png">
+                    <img src="./images/videos/icon-xcx_e8a2f36.png" alt="小程序">
+                </a>
+                <a href="#" class="hero-social-icon">
+                    <img src="./images/videos/slts_b5ccef2.png" alt="适龄提示">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 大地图模块 -->
+    <section id="big-world" class="big-world-section">
+        <div class="container">
+            <div class="big-world-content">
+                <!-- 背景视频区域 -->
+                <div class="world-video-container">
+                    <video class="world-background-video" autoplay muted loop playsinline>
+                        <source src="./images/videos/hexi.mp4" type="video/mp4">
+                    </video>
+                    <div class="world-video-overlay"></div>
+                </div>
+                
+                <!-- 路径展示区域 -->
+                <div class="world-path-section">
+                    <div class="world-path-container">
+                        <div class="world-path-line">
+                            <img src="./images/p_dsj_line-2_3d71152.png" alt="路径线" class="path-line-image">
+                            <!-- 路径标记点 -->
+                            <div class="path-marker path-marker-1" data-location="qinghe" data-video="./images/videos/qinghe.mp4">
+                                <img src="./images/p_dsj_dian_3d92953.png" alt="标记点" class="marker-icon" data-icon-inactive="./images/p_dsj_dian_3d92953.png" data-icon-active="./images/p_dsj_dian2_761f3b4.png">
+                                <div class="marker-info">
+                                    <h4 class="marker-name">清河</h4>
+                                </div>
+                            </div>
+                            <div class="path-marker path-marker-2" data-location="kaifeng" data-video="./images/videos/kaifeng.mp4">
+                                <img src="./images/p_dsj_dian_3d92953.png" alt="标记点" class="marker-icon" data-icon-inactive="./images/p_dsj_dian_3d92953.png" data-icon-active="./images/p_dsj_dian2_761f3b4.png">
+                                <div class="marker-info">
+                                    <h4 class="marker-name">开封</h4>
+                                </div>
+                            </div>
+                            <div class="path-marker path-marker-3 path-marker-active" data-location="hexi" data-video="./images/videos/hexi.mp4">
+                                <img src="./images/p_dsj_dian2_761f3b4.png" alt="标记点" class="marker-icon" data-icon-inactive="./images/p_dsj_dian_3d92953.png" data-icon-active="./images/p_dsj_dian2_761f3b4.png">
+                                <div class="marker-info">
+                                    <h4 class="marker-name">河西</h4>
+                                </div>
+                            </div>
+                            <div class="path-marker path-marker-4 path-marker-locked" data-location="coming-soon">
+                                <img src="./images/p_dsj_lock_a2a015d.png" alt="锁定" class="marker-icon marker-lock-icon">
+                                <div class="marker-info">
+                                    <div class="marker-coming-soon">
+                                        <span class="coming-soon-text">敬请期待</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 新闻/公告区域 -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <div class="news-header">
+                <div class="news-tabs">
+                    <button class="tab-btn active" data-tab="latest">最新</button>
+                    <button class="tab-btn" data-tab="news">新闻</button>
+                    <button class="tab-btn" data-tab="announcement">公告</button>
+                    <button class="tab-btn" data-tab="activity">活动</button>
+                </div>
+                <a href="#" class="more-link">更多+</a>
+            </div>
+            <div class="news-banner">
+                <div class="banner-container">
+                    <button class="banner-btn banner-btn-prev" aria-label="上一张">‹</button>
+                    <div class="banner-slides">
+                        <div class="banner-slide active">
+                            <a href="#" class="news-banner-link">
+                                <img src="./images/new1.png" alt="公告图片1" class="news-banner-image">
+                            </a>
+                        </div>
+                        <div class="banner-slide">
+                            <a href="#" class="news-banner-link">
+                                <img src="./images/new2.png" alt="公告图片2" class="news-banner-image">
+                            </a>
+                        </div>
+                        <div class="banner-slide">
+                            <a href="#" class="news-banner-link">
+                                <img src="./images/new3.png" alt="公告图片3" class="news-banner-image">
+                            </a>
+                        </div>
+                        <div class="banner-slide">
+                            <a href="#" class="news-banner-link">
+                                <img src="./images/new4.png" alt="公告图片4" class="news-banner-image">
+                            </a>
+                        </div>
+                        <div class="banner-slide">
+                            <a href="#" class="news-banner-link">
+                                <img src="./images/new5.png" alt="公告图片5" class="news-banner-image">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="banner-btn banner-btn-next" aria-label="下一张">›</button>
+                </div>
+                <div class="banner-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                </div>
+            </div>
+            <div class="news-content">
+                <div class="news-item">
+                    <span class="news-date">2025-11-07</span>
+                    <div class="news-info">
+                        <h3 class="news-title">家业更新|方外之地新景,星雨亦能传情</h3>
+                        <p class="news-subtitle">反诈宣传视频</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2025-11-07</span>
+                    <div class="news-info">
+                        <h3 class="news-title">11月7日《燕云十六声》违规玩家封禁公告</h3>
+                        <p class="news-subtitle news-subtitle-empty"></p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2025-11-07</span>
+                    <div class="news-info">
+                        <h3 class="news-title">11月7日2.2版本在线修复公告</h3>
+                        <p class="news-subtitle news-subtitle-empty"></p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2025-11-06</span>
+                    <div class="news-info">
+                        <h3 class="news-title">11月7日2.2版本「纵意戏九天」更新公告</h3>
+                        <p class="news-subtitle news-subtitle-empty"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 武器介绍板块 -->
+    <section id="weapon" class="weapon-section">
+        <video class="weapon-bg-video" autoplay muted loop playsinline>
+            <source src="./images/videos/wq_bg.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <div class="weapon-main-content">
+                <div class="weapon-info-left">
+                    <div class="weapon-title-wrapper">
+                        <h2 class="weapon-title-cn">武器名称</h2>
+                        <img class="weapon-title-image" src="" alt="" style="display: none;">
+                        <h3 class="weapon-title-en">WEAPON NAME</h3>
+                    </div>
+                    <p class="weapon-description">
+                        武器描述文字将在这里显示。这里可以放置详细的武器介绍和特点说明。
+                    </p>
+                    <div class="weapon-video-container">
+                        <video class="weapon-video" muted loop playsinline>
+                            <!-- 视频源 -->
+                        </video>
+                        <div class="video-play-overlay">
+                            <div class="play-button">▶</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weapon-image-right">
+                    <img class="weapon-large-image" src="" alt="武器大图">
+                </div>
+            </div>
+            <div class="weapon-selector-bar">
+                <div class="weapon-selector-inner">
+                    <div class="weapon-selector-item weapon-btn-2" data-weapon="2"></div>
+                    <div class="weapon-selector-item weapon-btn-3" data-weapon="3"></div>
+                    <div class="weapon-selector-item weapon-btn-5" data-weapon="5"></div>
+                    <div class="weapon-selector-item weapon-btn-4 active" data-weapon="4"></div>
+                    <div class="weapon-selector-item weapon-btn-1" data-weapon="1"></div>
+                    <div class="weapon-selector-item weapon-btn-6" data-weapon="6"></div>
+                    <div class="weapon-selector-item weapon-btn-7" data-weapon="7"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 首领板块 -->
+    <section id="boss" class="boss-section">
+        <div class="container">
+            <div class="boss-content">
+                <!-- 左侧首领列表 -->
+                <div class="boss-list">
+                    <div class="boss-list-item active" data-boss="1">
+                        <span class="boss-list-dot"></span>
+                        <span class="boss-list-name">小十七</span>
+                    </div>
+                    <div class="boss-list-item" data-boss="2">
+                        <span class="boss-list-dot"></span>
+                        <span class="boss-list-name">道主</span>
+                    </div>
+                    <div class="boss-list-item" data-boss="3">
+                        <span class="boss-list-dot"></span>
+                        <span class="boss-list-name">田英</span>
+                    </div>
+                    <div class="boss-list-item" data-boss="4">
+                        <span class="boss-list-dot"></span>
+                        <span class="boss-list-name">寻心</span>
+                    </div>
+                    <div class="boss-list-item" data-boss="5">
+                        <span class="boss-list-dot"></span>
+                        <span class="boss-list-name">叶万山</span>
+                    </div>
+                    <div class="boss-list-item" data-boss="6">
+                        <span class="boss-list-dot"></span>
+                        <span class="boss-list-name">千夜</span>
+                    </div>
+                    <div class="boss-list-item" data-boss="7">
+                        <span class="boss-list-dot"></span>
+                        <span class="boss-list-name">容鸢</span>
+                    </div>
+                </div>
+                
+                <!-- 中央大图/视频区域 -->
+                <div class="boss-image-container">
+                    <video class="boss-video" muted loop playsinline>
+                        <!-- 视频源 -->
+                    </video>
+                    <img class="boss-large-image" src="" alt="首领大图" style="display: none;">
+                </div>
+                
+                <!-- 右下角信息面板 -->
+                <div class="boss-info-panel">
+                    <img class="boss-title-image" src="" alt="首领名称" style="display: none;">
+                    <h3 class="boss-title" style="display: none;">首领名称</h3>
+                    <p class="boss-description" style="display: none;">首领描述文字将在这里显示。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 游戏特色 -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <!-- 标签导航区域 -->
+            <div class="features-tabs">
+                <div class="feature-tab" data-feature="music">
+                    <img class="feature-tab-img" src="./images/tab-music_b6146ca.png" alt="音乐">
+                    <img class="feature-tab-img-active" src="./images/tab-music-on_fa7ac98.png" alt="音乐">
+                    <span class="feature-tab-label">音乐</span>
+                </div>
+                <div class="feature-tab active" data-feature="yuanhua">
+                    <img class="feature-tab-img" src="./images/tab-yuanhua_1005f93.png" alt="原画">
+                    <img class="feature-tab-img-active" src="./images/tab-yuanhua-on_b04fffa.png" alt="原画">
+                    <span class="feature-tab-label">原画</span>
+                </div>
+                <div class="feature-tab" data-feature="video">
+                    <img class="feature-tab-img" src="./images/tab-video_eed1467.png" alt="视频">
+                    <img class="feature-tab-img-active" src="./images/tab-video-on_9958587.png" alt="视频">
+                    <span class="feature-tab-label">视频</span>
+                </div>
+                <div class="feature-tab" data-feature="paper">
+                    <img class="feature-tab-img" src="./images/tab-paper_5a28c67.png" alt="壁纸">
+                    <img class="feature-tab-img-active" src="./images/tab-paper-on_4e4beae.png" alt="壁纸">
+                    <span class="feature-tab-label">壁纸</span>
+                </div>
+                <div class="feature-tab" data-feature="screenshot">
+                    <img class="feature-tab-img" src="./images/tab-screenShot_73b0a14.png" alt="截图">
+                    <img class="feature-tab-img-active" src="./images/tab-screenShot-on_6e71fba.png" alt="截图">
+                    <span class="feature-tab-label">截图</span>
+                </div>
+            </div>
+
+            <!-- 内容展示区域 -->
+            <div class="features-content">
+                <!-- 音乐内容 -->
+                <div class="feature-content-panel" data-content="music">
+                    <div class="feature-content-main">
+                        <h3 class="feature-content-title">游戏音乐</h3>
+                        <p class="feature-content-description">沉浸式音乐体验，感受燕云世界的音律之美。每一段旋律都经过精心编排，为游戏体验增添无限魅力。</p>
+                        <div class="feature-content-grid">
+                            <div class="feature-content-item">
+                                <div class="feature-content-placeholder">
+                                    <span>音乐内容1</span>
+                                </div>
+                            </div>
+                            <div class="feature-content-item">
+                                <div class="feature-content-placeholder">
+                                    <span>音乐内容2</span>
+                                </div>
+                            </div>
+                            <div class="feature-content-item">
+                                <div class="feature-content-placeholder">
+                                    <span>音乐内容3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 原画内容 -->
+                <div class="feature-content-panel active" data-content="yuanhua">
+                    <div class="feature-content-main">
+                        <h3 class="feature-content-title">精美原画</h3>
+                        <p class="feature-content-description">欣赏游戏的精美原画作品，感受艺术与技术的完美结合。每一幅画作都展现了燕云世界的独特魅力。</p>
+                        <div class="feature-content-grid feature-content-grid-single-row">
+                            <div class="feature-content-item">
+                                <img src="./images/15_7e4abe6.jpg" alt="原画1" class="feature-content-image">
+                            </div>
+                            <div class="feature-content-item">
+                                <img src="./images/16_95d5a1e.jpg" alt="原画2" class="feature-content-image">
+                            </div>
+                            <div class="feature-content-item">
+                                <img src="./images/17_33f9186.jpg" alt="原画3" class="feature-content-image">
+                            </div>
+                            <div class="feature-content-item">
+                                <img src="./images/18_bd1a5dc.jpg" alt="原画4" class="feature-content-image">
+                            </div>
+                            <div class="feature-content-item">
+                                <img src="./images/19_dcc5786.jpg" alt="原画5" class="feature-content-image">
+                            </div>
+                            <div class="feature-content-item">
+                                <img src="./images/20_472c619.jpg" alt="原画6" class="feature-content-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 视频内容 -->
+                <div class="feature-content-panel" data-content="video">
+                    <div class="feature-content-main">
+                        <h3 class="feature-content-title">精彩视频</h3>
+                        <p class="feature-content-description">观看游戏精彩视频，体验震撼的视觉盛宴。从战斗演示到剧情CG，全方位展示游戏魅力。</p>
+                        <div class="feature-content-grid feature-content-grid-video">
+                            <div class="feature-content-item feature-video-item">
+                                <div class="feature-video-container">
+                                    <video class="feature-video" muted loop playsinline>
+                                        <source src="./images/videos/shuangdao.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="feature-video-overlay">
+                                        <div class="feature-video-play-btn">▶</div>
+                                    </div>
+                                </div>
+                                <p class="feature-video-title">双刀演示</p>
+                            </div>
+                            <div class="feature-content-item feature-video-item">
+                                <div class="feature-video-container">
+                                    <video class="feature-video" muted loop playsinline>
+                                        <source src="./images/videos/jian.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="feature-video-overlay">
+                                        <div class="feature-video-play-btn">▶</div>
+                                    </div>
+                                </div>
+                                <p class="feature-video-title">剑演示</p>
+                            </div>
+                            <div class="feature-content-item feature-video-item">
+                                <div class="feature-video-container">
+                                    <video class="feature-video" muted loop playsinline>
+                                        <source src="./images/videos/qiang.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="feature-video-overlay">
+                                        <div class="feature-video-play-btn">▶</div>
+                                    </div>
+                                </div>
+                                <p class="feature-video-title">枪演示</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 壁纸内容 -->
+                <div class="feature-content-panel" data-content="paper">
+                    <div class="feature-content-main">
+                        <h3 class="feature-content-title">精美壁纸</h3>
+                        <p class="feature-content-description">下载游戏精美壁纸，将燕云世界的美景设为桌面。高清原图，支持多种分辨率。</p>
+                        <div class="feature-content-grid">
+                            <div class="feature-content-item">
+                                <img src="./images/23_9438e58.jpg" alt="壁纸1" class="feature-content-image">
+                                <div class="feature-content-actions">
+                                    <button class="feature-download-btn">下载</button>
+                                </div>
+                            </div>
+                            <div class="feature-content-item">
+                                <img src="./images/15_7e4abe6.jpg" alt="壁纸2" class="feature-content-image">
+                                <div class="feature-content-actions">
+                                    <button class="feature-download-btn">下载</button>
+                                </div>
+                            </div>
+                            <div class="feature-content-item">
+                                <img src="./images/16_95d5a1e.jpg" alt="壁纸3" class="feature-content-image">
+                                <div class="feature-content-actions">
+                                    <button class="feature-download-btn">下载</button>
+                                </div>
+                            </div>
+                            <div class="feature-content-item">
+                                <img src="./images/17_33f9186.jpg" alt="壁纸4" class="feature-content-image">
+                                <div class="feature-content-actions">
+                                    <button class="feature-download-btn">下载</button>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- 截图内容 -->
+                <div class="feature-content-panel" data-content="screenshot">
+                    <div class="feature-content-main">
+                        <h3 class="feature-content-title">游戏截图</h3>
+                        <p class="feature-content-description">浏览游戏实机截图，了解游戏的画面表现。从风景到战斗，全方位展示游戏内容。</p>
+                        <div class="feature-content-grid">
+                            <div class="feature-content-item">
+                                <img src="./images/18_bd1a5dc.jpg" alt="截图1" class="feature-content-image">
+                            </div>
+                            <div class="feature-content-item">
+                                <img src="./images/19_dcc5786.jpg" alt="截图2" class="feature-content-image">
+                            </div>
+                            <div class="feature-content-item">
+                                <img src="./images/20_472c619.jpg" alt="截图3" class="feature-content-image">
+                            </div>
+                            <div class="feature-content-item">
+                                <img src="./images/23_9438e58.jpg" alt="截图4" class="feature-content-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色板块 -->
+    <section id="special-features" class="special-features-section">
+        <!-- 内容展示区域（背景图） -->
+        <div class="special-features-panels">
+            <div class="special-panel special-panel-1 active" data-panel="1" style="background-image: url('./images/videos/bg2_31a1af3.jpg');">
+                <!-- 内容将在后续添加 -->
+            </div>
+            <div class="special-panel special-panel-2" data-panel="2" style="background-image: url('./images/videos/bg3_839c758.jpg');">
+                <!-- 内容将在后续添加 -->
+            </div>
+            <div class="special-panel special-panel-3" data-panel="3" style="background-image: url('./images/videos/bg5_d7a0e6d.jpg');">
+                <!-- 内容将在后续添加 -->
+            </div>
+            <div class="special-panel special-panel-4" data-panel="4" style="background-image: url('./images/videos/bg10-1920_bff0c3a.jpg');">
+                <!-- 内容将在后续添加 -->
+            </div>
+        </div>
+        
+        <!-- 标识按钮区域 -->
+        <div class="special-features-tabs-wrapper">
+            <div class="container">
+                <div class="special-features-tabs">
+                    <div class="special-tab special-tab-1 active" data-tab="1">
+                        <img class="special-tab-img" src="./images/nav-ts1_c82be65.png" alt="特色1">
+                        <img class="special-tab-img-active" src="./images/nav-ts1-on_31047fb.png" alt="特色1">
+                    </div>
+                    <div class="special-tab special-tab-2" data-tab="2">
+                        <img class="special-tab-img" src="./images/nav-ts2_5b60f41.png" alt="特色2">
+                        <img class="special-tab-img-active" src="./images/nav-ts2-on_fa14d84.png" alt="特色2">
+                    </div>
+                    <div class="special-tab special-tab-3" data-tab="3">
+                        <img class="special-tab-img" src="./images/nav-ts3_032f6e1.png" alt="特色3">
+                        <img class="special-tab-img-active" src="./images/nav-ts3-on_d0a91ed.png" alt="特色3">
+                    </div>
+                    <div class="special-tab special-tab-4" data-tab="4">
+                        <img class="special-tab-img" src="./images/nav-ts4_5dab009.png" alt="特色4">
+                        <img class="special-tab-img-active" src="./images/nav-ts4-on_6c52b85.png" alt="特色4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
